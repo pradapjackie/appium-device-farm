@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AppiumTestSuite" parallel="tests" thread-count="2">
+    <test name="Test on Vivo Device">
+        <parameter name="deviceName" value="10AE231R4Q0015S" />
+        <classes>
+            <class name="org.example.Main"/>
+        </classes>
+    </test>
+    <test name="Test on Nubia Device">
+        <parameter name="deviceName" value="0123456789ABCDEF" />
+        <classes>
+            <class name="org.example.Example"/>
+        </classes>
+    </test>
+</suite>
